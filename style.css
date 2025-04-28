@@ -1,0 +1,114 @@
+.bodyI{
+    background-image: url(assets/imagenes/vias.png);
+    background-size: cover;
+    background-color: cadetblue;
+   
+    /*fuente*/
+    .covered-by-your-grace-regular {
+        font-family: "Covered By Your Grace", cursive;
+        font-weight: normal;
+        font-style: normal;
+    }
+      
+}
+
+.textos {
+    display: flex;
+    justify-content: center; /* centra H */
+    align-items: center; /* centra */
+    height: 100vh; /* altura de donde esta*/
+    text-align: center; 
+}
+
+.textos a {
+
+    margin-top: 15px; /*para el espacio superior*/
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Covered By Your Grace', cursive;
+    font-style: italic;
+    text-decoration: none;
+
+}
+
+/*style para el vias1*/
+
+.body1 {
+    background-image: url(assets/imagenes/vias2.png);
+    background-size: cover;
+    display: flex;
+    height: 100vh; /* altura de donde esta*/
+    margin-top: 15px; /*para el espacio superior*/
+    background-color: rgb(95, 135, 180);
+    padding: 20px;
+}
+
+.video{
+    display: none;
+    justify-content: center;
+    align-items: center; 
+    position: fixed; 
+    top: 90%; 
+    left: 150%; 
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 4; 
+    width: 70vw; /* 90% del ancho de la pantalla */
+    height: 70vh; /* 90% del alto de la pantalla */
+    overflow: hidden; 
+}
+
+
+.video video {
+    width: 50%; 
+    height: 50%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.imagen1 , .imagen2  {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    top: 50%;
+    left: 70%; 
+    transform: translate(-50%, -50%); 
+    width: 200px;
+    height: 250px;
+}
+
+.imagen2  {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    top: 50%;
+    left: 35%; 
+    transform: translate(-50%, -50%); 
+    width: 200px;
+    height: 250px;
+
+}
+
+.display-text {
+    position: fixed;
+    top: 50%;
+    right: -100%; /*fuera de la pantalla, a la derecha */
+    transform: translateY(-50%); /* centra en la  pantalla*/
+    background-image: url(assets/imagenes/libreta.jpg);
+    color: #251328;
+    padding: 20px;
+    max-width: 700px; /*  ancho del panel */
+    max-height: 500px;
+    overflow-y: auto; /* Scroll si el contenido es demasiado largo */
+    font-size: 18px;
+    font-family: 'Covered By Your Grace', cursive;
+    text-align: left;
+    display: none; /* oculta */
+    z-index: 2;
+    transition: right 0.5s ease; /* Transición suave para el movimiento */
+}
